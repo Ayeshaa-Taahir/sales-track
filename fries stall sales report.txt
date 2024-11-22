@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Small Food Stall Program (Fries Sales)
+   
+    // Integer values: Number of fries sold yesterday and today
+    int friesSoldYesterday = 50;
+    int friesSoldToday = 75;
+
+    // Floating-point values: Price per fry and discount percentage
+    float pricePerFry = 1.25;      // Price in dollars
+    float discountPercentage = 10; // Discount in percentage
+
+    // 2. Arithmetic operations
+
+    // Addition: Total fries sold over two days
+    int totalFriesSold = friesSoldYesterday + friesSoldToday;
+
+    // Subtraction: Difference in sales between today and yesterday
+    int friesSalesDifference = friesSoldToday - friesSoldYesterday;
+
+    // Multiplication: Total revenue for today's fries sales (before discount)
+    float totalRevenueToday = friesSoldToday * pricePerFry;
+
+    // Division: Price per fry after applying the discount
+    float priceAfterDiscount = pricePerFry * (1 - (discountPercentage / 100));
+
+    // 3. Output the results
+
+    cout << "Fries Stall Sales Report:" << endl;
+    cout << "--------------------------------" << endl;
+    cout << "Fries sold yesterday: " << friesSoldYesterday << endl;
+    cout << "Fries sold today: " << friesSoldToday << endl;
+    cout << "Total fries sold in two days: " << totalFriesSold << endl;
+    cout << "Difference in sales (Today - Yesterday): " << friesSalesDifference << endl;
+    cout << "Total revenue today (before discount): $" << totalRevenueToday << endl;
+    cout << "Price per fry after " << discountPercentage << "% discount: $" << priceAfterDiscount << endl;
+
+    return 0;
+}
